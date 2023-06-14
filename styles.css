@@ -1,0 +1,158 @@
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 37, 65);
+  }
+  
+  .container {
+    max-width: 600px;
+    margin-top: 50px;
+    margin-left: 400px;
+    padding: 20px;
+    display:flow-root;
+    border-radius: 20px;
+    background-color: rgb(95, 83, 219);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  .task-input {
+   
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .task-input input{
+    margin-left: 175px;
+  }
+  
+  .task-input input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+  }
+
+  .task-input button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  .task-item.new-task {
+    transform: scale(0.9);
+  }
+  .completed{
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+  .task-item.completed {
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+  
+  .task-item span {
+    flex-grow: 1;
+  }
+  
+  .task-details {
+    display:grid;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .start-date-input{
+      margin-right: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+      width:90px;
+  }
+  .end-date-input{
+      margin-right: 10px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      width: 90px;
+  }
+  
+  .urgency-select{
+      font-size: 15px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+  }
+  
+  .urgency-select {
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .label-input {
+    flex-grow: 2;
+    width: 170px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #f10b0b;
+  }
+
+  #progressBarContainer {
+    width: 100%;
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+  
+  #progressBar {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+    width: 0%;
+    transition: width 1.2s ease-in-out;
+    margin-top: 25px;
+  }
+
+  #progressPercentage{
+      font-weight: bold;
+      text-align:right;
+      margin-top:0px;
+      margin-bottom: 0%;
+      color:#fff;
+  }
+  
+ 
+  
+  
+  
